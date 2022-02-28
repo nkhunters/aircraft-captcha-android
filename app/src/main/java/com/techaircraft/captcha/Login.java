@@ -21,7 +21,6 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import com.techaircraft.captcha.Api.RetrofitClient;
 import com.techaircraft.captcha.FirebaseMessaging.Constants;
@@ -47,9 +46,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
     @BindView(R.id.login)
     Button login;
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-
     @BindView(R.id.terms_checkbox)
     CheckBox termsCheckbox;
 
@@ -61,8 +57,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         setContentView(R.layout.activity_login);
         ButterKnife.bind(this);
 
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("\t\tLogin");
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             NotificationManager mNotificationManager =
@@ -162,7 +156,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                                         String auto_approve = user.getAuto_approve();
                                         String total_earning = user.getTotal_earning();
 
-                                        Intent intent = new Intent(Login.this, CaptchaActivity.class);
+                                        Intent intent = new Intent(Login.this, Home.class);
                                         intent.putExtra("user_id", str_user_id);
                                         intent.putExtra("captcha_time", captcha_time);
                                         intent.putExtra("extra_time", user.getExtra_time());

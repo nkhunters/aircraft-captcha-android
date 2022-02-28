@@ -10,21 +10,22 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="com.techaircraft.captcha.ViewMessages" />
-        <activity android:name="com.techaircraft.captcha.NotificationActivity">
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Home" />
+        <activity android:name=".ViewMessages" />
+        <activity android:name=".NotificationActivity">
             <intent-filter>
                 <action android:name="com.techaircraft.captcha_TARGET_NOTIFICATION" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.techaircraft.captcha.OrderHistory" />
-        <activity android:name="com.techaircraft.captcha.MainActivity" />
-        <activity android:name="com.techaircraft.captcha.Login" />
-        <activity android:name="com.techaircraft.captcha.CaptchaActivity" />
-        <activity android:name="com.techaircraft.captcha.Splash">
+        <activity android:name=".OrderHistory" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".CaptchaActivity" />
+        <activity android:name=".Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -33,7 +34,7 @@
         </activity>
 
         <service
-            android:name="com.techaircraft.captcha.FirebaseMessaging.MyFirebaseMessagingService"
+            android:name=".FirebaseMessaging.MyFirebaseMessagingService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>

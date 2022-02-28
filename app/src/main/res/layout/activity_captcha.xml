@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/main_layout"
-    tools:context=".CaptchaActivity">
+    tools:context=".CaptchaActivity"
+    android:background="@color/backgroudWhite">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"

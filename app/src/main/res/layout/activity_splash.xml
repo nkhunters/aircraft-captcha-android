@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Splash">
+    tools:context=".Splash"
+    android:background="@color/colorPrimary">
 
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:src="@drawable/splash"
@@ -19,9 +20,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:gravity="center_horizontal"
         android:text="Developed By AIRCRAFT Data entry"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"/>
+        android:fontFamily="@font/nexalight"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"/>
 
 </RelativeLayout>
