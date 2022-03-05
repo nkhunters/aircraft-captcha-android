@@ -54,7 +54,7 @@
                 android:fontFamily="@font/proxima"
                 android:layout_marginTop="20dp"
                 android:text="200$"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="@color/colorPrimary"
                 android:textSize="26sp" />
 
         </RelativeLayout>

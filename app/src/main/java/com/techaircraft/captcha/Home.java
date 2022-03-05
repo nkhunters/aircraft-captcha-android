@@ -165,6 +165,19 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 navController.navigate(R.id.homeFragment);
                 break;
 
+            case R.id.view_messages:
+                navController.navigate(R.id.viewMessagesFragment);
+                break;
+
+            case R.id.order_history:
+                navController.navigate(R.id.orderHistoryFragment);
+                break;
+
+            case R.id.logout:
+                drawerLayout.closeDrawer(0);
+                break;
+
+
 //            case R.id.plans:
 //                navController.navigate(R.id.plansFragment);
 //                break;

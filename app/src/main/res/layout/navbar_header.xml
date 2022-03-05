@@ -44,7 +44,7 @@
                 android:layout_marginLeft="24dp"
                 android:fontFamily="@font/proxima"
                 android:textSize="22sp"
-                android:text="Avinash"
+                android:text="Username"
                 android:textColor="#fff" />
 
             <com.google.android.material.textview.MaterialTextView

@@ -24,7 +24,7 @@
                 style="@style/DrawerArrowStyle"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/colorPrimary"
+                android:background="@color/colorPrimaryDark"
                 app:navigationIcon="@drawable/hamburger_menu"
                 app:navigationIconTint="@color/white">
 
@@ -64,9 +64,9 @@
         android:background="@color/white"
         app:headerLayout="@layout/navbar_header"
         app:itemBackground="@color/white"
-        app:itemIconTint="@color/colorPrimary"
+        app:itemIconTint="@color/black"
         app:itemTextAppearance="@style/FontStyleLight"
-        app:itemTextColor="@color/colorPrimary"
+        app:itemTextColor="@color/black"
         app:itemIconPadding="30dp"
         app:menu="@menu/navbar_menu" />
 

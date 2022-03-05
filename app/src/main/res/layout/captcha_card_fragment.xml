@@ -152,7 +152,7 @@
                         android:text="Skip"
                         android:textColor="@color/white"
                         android:textSize="9sp"
-                        app:backgroundTint="@color/colorAccent"
+                        app:backgroundTint="@color/colorPrimary"
                         app:cornerRadius="18dp"
                         app:elevation="20dp"
                         app:rippleColor="@color/colorPrimary" />
